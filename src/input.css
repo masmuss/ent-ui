@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* navbar */
+.navlink {
+	@apply text-sm font-semibold text-gray-600 transition-all hover:text-gray-800;
+}
+
+/* jumbotron */
+.jumbotron-wrapper {
+	@apply flex h-screen items-center justify-center;
+}
+
+.jumbotron-content {
+	@apply flex max-w-2xl flex-col space-y-4;
+}
+
+.jumbotron-content .jumbotron-heading {
+	@apply text-center text-6xl font-bold leading-snug;
+}
+
+.jumbotron-content .jumbotron-title {
+	@apply text-center text-6xl font-bold leading-snug;
+}
+
+.jumbotron-content .jumbotron-subtitle {
+	@apply text-center text-[28px] font-normal text-gray-500;
+}
+
+.jumbotron-content .cta-wrapper {
+	@apply mt-12 flex items-center justify-center gap-4;
+}
+
+.cta-wrapper .cta-button-primary {
+	@apply rounded-md bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white;
+}
+
+.cta-wrapper .cta-button-secondary {
+	@apply rounded-md px-5 py-2.5 text-sm font-semibold text-gray-900;
+}
