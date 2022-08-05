@@ -22,7 +22,7 @@
 	@apply flex max-w-md flex-col space-y-4 md:max-w-2xl;
 }
 
-.jumbotron-content .jumbotron-title {
+.jumbotron-content > .jumbotron-title {
 	@apply text-center text-3xl font-bold md:text-6xl md:leading-snug;
 }
 
@@ -31,13 +31,83 @@
 }
 
 .jumbotron-content .cta-wrapper {
-	@apply flex flex-col md:flex-row items-center justify-center gap-4 py-12;
+	@apply flex flex-col items-center justify-center gap-4 py-12 md:flex-row;
 }
 
-.cta-wrapper .cta-button-primary {
+.cta-button-primary {
 	@apply rounded-md bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white;
 }
 
-.cta-wrapper .cta-button-secondary {
+.cta-button-secondary {
 	@apply rounded-md px-5 py-2.5 text-sm font-semibold text-gray-900;
+}
+
+.section-title {
+	@apply text-3xl font-bold md:text-6xl md:leading-snug;
+}
+
+.section-subtitle {
+	@apply w-[557px] text-3xl text-gray-500 md:text-xl md:leading-snug;
+}
+
+/* about us */
+.about-content-wrapper {
+	@apply static flex flex-col md:flex-row-reverse;
+}
+
+.about-content-wrapper .about-content {
+	@apply absolute top-[1361px] left-[873px] w-96 font-normal leading-7 tracking-wide text-gray-500;
+}
+
+.ellipse-wrapper .ellipse {
+	@apply absolute rounded-full bg-gray-200;
+}
+
+.ellipse-1 {
+	@apply top-[1064px] left-[787px] h-[150px] w-[150px];
+}
+
+.ellipse-2 {
+	@apply top-[1139px] left-[130px] h-[150px] w-[150px];
+}
+
+.ellipse-3 {
+	@apply top-[1288px] left-[288px] h-[500px] w-[500px];
+}
+
+.ellipse-4 {
+	@apply top-[1765px] left-[115px] h-[150px] w-[150px];
+}
+
+.ellipse-5 {
+	@apply top-[1892px] left-[562px] h-[150px] w-[150px];
+}
+
+.ellipse-6 {
+	@apply top-[1638px] left-[873px] h-[150px] w-[150px];
+}
+
+/* our product */
+.team-wrapper {
+	@apply flex flex-wrap justify-center gap-x-8 gap-y-36 py-[76px] md:flex-row;
+}
+
+.team {
+	@apply flex w-[384px] flex-col items-center justify-center;
+}
+
+.team .team-image {
+	@apply h-[260px] w-full rounded-lg bg-gray-200;
+}
+
+.team .team-text {
+	@apply mt-8 flex flex-col gap-4 text-center font-normal tracking-wide;
+}
+
+.team-text .team-name {
+	@apply text-center text-2xl font-semibold uppercase leading-normal tracking-wide text-gray-900;
+}
+
+.team-text .team-description {
+	@apply text-base text-gray-500;
 }
