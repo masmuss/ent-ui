@@ -5,8 +5,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* navbar */
-.navlink {
+/* .nav-link {
 	@apply text-sm font-semibold text-gray-600 transition-all hover:text-gray-800;
+} */
+
+.nav-link {
+	@apply mt-2 rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:text-gray-900 dark:bg-transparent md:mt-0 md:ml-4;
 }
 
 /* jumbotron */
@@ -15,23 +19,19 @@
 }
 
 .jumbotron-content {
-	@apply flex max-w-2xl flex-col space-y-4;
-}
-
-.jumbotron-content .jumbotron-heading {
-	@apply text-center text-6xl font-bold leading-snug;
+	@apply flex max-w-md flex-col space-y-4 md:max-w-2xl;
 }
 
 .jumbotron-content .jumbotron-title {
-	@apply text-center text-6xl font-bold leading-snug;
+	@apply text-center text-3xl font-bold md:text-6xl md:leading-snug;
 }
 
 .jumbotron-content .jumbotron-subtitle {
-	@apply text-center text-[28px] font-normal text-gray-500;
+	@apply text-center text-lg font-normal tracking-wide text-gray-500 md:text-[28px] md:leading-[34px];
 }
 
 .jumbotron-content .cta-wrapper {
-	@apply mt-12 flex items-center justify-center gap-4;
+	@apply flex flex-col md:flex-row items-center justify-center gap-4 py-12;
 }
 
 .cta-wrapper .cta-button-primary {
