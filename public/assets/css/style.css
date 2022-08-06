@@ -956,7 +956,12 @@ video {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
+.ellipse-wrapper{
 
+  position:static;
+  padding: 10px;
+ margin-top: 1000px;
+}
 .ellipse-wrapper .ellipse {
   position: absolute;
   border-radius: 9999px;
