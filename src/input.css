@@ -111,3 +111,115 @@
 .team-text .team-description {
 	@apply text-base text-gray-500;
 }
+.list-division{
+	padding: 120px 40px;
+	font-weight: 700;
+	font-size:1.25rem ;
+	
+   }
+   
+   .list-division .list-division-page{
+	 padding: 10px 15px;
+   }
+   
+   .line-members{
+	 padding: 50px 40px;
+   }
+   .solid{
+   border-left: 2px solid;
+   height: 500px;
+   width: 0px;
+   display: inline-block;
+   padding-left: 5px;
+   }
+   
+   .dropbtn {
+	 background-color: #25B3B4;
+	 color: white;
+	 padding: 16px 16px;
+	 font-size: 16px;
+	 border: none;
+	 cursor: pointer;
+	 width: 150px;
+	 height: 50px;
+   }
+   
+   /* Dropdown button on hover & focus */
+   .dropbtn:hover, .dropbtn:focus {
+	 background-color: #25B3B4;
+   }
+   
+   /* The container <div> - needed to position the dropdown content */
+   .dropdown {
+	 position: relative;
+	 display: inline-block;
+	 padding : 50px 50px;
+   }
+   
+   /* Dropdown Content (Hidden by Default) */
+   .dropdown-content {
+	 display: none;
+	 position: absolute;
+	 background-color: #f1f1f1;
+	 min-width: 160px;
+	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	 z-index: 2;
+   }
+   
+   /* Links inside the dropdown */
+   .dropdown-content a {
+	 color: black;
+	 padding: 12px 16px;
+	 text-decoration: none;
+	 display: block;
+   }
+   
+   /* Change color of dropdown links on hover */
+   .dropdown-content a:hover {background-color: #ddd}
+   
+   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+   .show {display:block;}
+   .swiper {
+		   width: 700px;
+		   height: 350px;
+		 }
+   
+		 .swiper-slide {
+		   text-align: center;
+		   font-size: 18px;
+		   background: #fff;
+		   /* Center slide text vertically */
+		   display: grid;
+		   grid-template-columns: auto auto auto;
+		   padding: 10px 20px;
+		   justify-content: center;
+		   align-items: center;
+		   column-gap: 20px;
+		 }
+   
+		 .swiper-slide img {
+		   display: flex;
+		   width: 100%;
+		   height: 100%;
+		   object-fit: cover;
+		 }
+		 .member-ellipse{
+			border-radius: 100%;
+			background: #ddd;
+			height: 150px;
+			width: 150px;
+			padding: 20px;
+		  } 
+		  .ellipse-wrapper{
+
+			position:static;
+			padding: 10px;
+		   margin-top: 1000px;
+		  }
+		  .ellipse-wrapper .ellipse {
+			position: absolute;
+			border-radius: 9999px;
+			--tw-bg-opacity: 1;
+			background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+		  }
+			

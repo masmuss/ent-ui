@@ -612,6 +612,10 @@ video {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -659,6 +663,10 @@ video {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .flex-grow {
@@ -716,6 +724,26 @@ video {
 .py-36 {
   padding-top: 9rem;
   padding-bottom: 9rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pb-4 {
@@ -908,99 +936,6 @@ video {
   font-weight: 700;
 }
 
-.list-division{
- padding: 120px 40px;
- font-weight: 700;
- font-size:1.25rem ;
- 
-}
-
-.list-division .list-division-page{
-  padding: 10px 15px;
-}
-
-.line-members{
-  padding: 50px 40px;
-}
-.solid{
-border-left: 2px solid;
-height: 500px;
-width: 0px;
-display: inline-block;
-padding-left: 5px;
-}
-
-.dropbtn {
-  background-color: #25B3B4;
-  color: white;
-  padding: 16px 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  width: 150px;
-  height: 50px;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #25B3B4;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  padding : 50px 50px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-.swiper {
-        width: 700px;
-        height: 350px;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px 20px;
-        justify-content: center;
-        align-items: center;
-        column-gap: 20px;
-      }
-
-      .swiper-slide img {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
 @media (min-width: 768px) {
   .section-title {
     font-size: 3.75rem;
@@ -1049,12 +984,7 @@ padding-left: 5px;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
-.ellipse-wrapper{
 
-  position:static;
-  padding: 10px;
- margin-top: 1000px;
-}
 .ellipse-wrapper .ellipse {
   position: absolute;
   border-radius: 9999px;
@@ -1104,13 +1034,6 @@ padding-left: 5px;
   width: 150px;
 }
 
-.member-ellipse{
-  border-radius: 100%;
-  background: #ddd;
-  height: 150px;
-  width: 150px;
-  padding: 20px;
-}
 /* our product */
 
 .team-wrapper {
@@ -1175,6 +1098,133 @@ padding-left: 5px;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.list-division{
+  padding: 120px 40px;
+  font-weight: 700;
+  font-size:1.25rem ;
+}
+
+.list-division .list-division-page{
+  padding: 10px 15px;
+}
+
+.line-members{
+  padding: 50px 40px;
+}
+
+.solid{
+  border-left: 2px solid;
+  height: 500px;
+  width: 0px;
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.dropbtn {
+  background-color: #25B3B4;
+  color: white;
+  padding: 16px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #25B3B4;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding : 50px 50px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+  display:block;
+}
+
+.swiper {
+  width: 700px;
+  height: 350px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.swiper-slide img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.member-ellipse{
+  border-radius: 100%;
+  background: #ddd;
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+}
+
+.ellipse-wrapper{
+  position:static;
+  padding: 10px;
+  margin-top: 1000px;
+}
+
+.ellipse-wrapper .ellipse {
+  position: absolute;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1231,3 +1281,4 @@ padding-left: 5px;
     line-height: 1.75rem;
   }
 }
+			

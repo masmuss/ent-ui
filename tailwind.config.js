@@ -3,16 +3,7 @@ module.exports = {
 	content: ["public/**/*.{html, js}"],
 	theme: {
 		extend: {},
-		colors: {
-			/**
-			 * example:
-			 * 'blue': '#1fb6ff',
-			 */
-			// primary
-			// secondary
-			// accent
-			// background
-		},
+		  
 		container: {
 			center: true,
 			padding: {
