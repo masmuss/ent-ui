@@ -5,6 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+	  />
 		<title>Home</title>
 	</head>
 	<body>
@@ -178,6 +183,86 @@
 			</div>
 		</section>
 
+		<!-- Our member -->
+
+		<section class="static py-36">
+			<div class="container">
+				<div class="flex flex-col items-center justify-center">
+					<h2 class="section-title">Here Our Great Team</h2>
+					<h2 class="section-title">Members For Many Years</h2>
+				</div>
+				 <div class="flex flex-row">
+					<div class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+						<ul class="list-division relative px-10 py-16">
+							<li class="list-division-page relative py-3 px-5"><a class="block py-2 px-4 w-full text-white bg-blue-700 rounded-t-lg border-b border-gray-200 cursor-pointer dark:bg-gray-800 dark:border-gray-600" href="">Reporter</a></li>
+							<li class="list-division-page relative py-3 px-5"><a class="block py-2 px-4 w-full text-white bg-blue-700 rounded-t-lg border-b border-gray-200 cursor-pointer dark:bg-gray-800 dark:border-gray-600" href="">Photografer</a></li>
+							<li class="list-division-page relative py-3 px-5"><a class="block py-2 px-4 w-full text-white bg-blue-700 rounded-t-lg border-b border-gray-200 cursor-pointer dark:bg-gray-800 dark:border-gray-600" href="">Videographer</a></li>
+							<li class="list-division-page relative py-3 px-5"><a class="block py-2 px-4 w-full text-white bg-blue-700 rounded-t-lg border-b border-gray-200 cursor-pointer dark:bg-gray-800 dark:border-gray-600" href="">Graphic Desainer</a></li>
+							<li class="list-division-page relative py-3 px-5"><a class="block py-2 px-4 w-full text-white bg-blue-700 rounded-t-lg border-b border-gray-200 cursor-pointer dark:bg-gray-800 dark:border-gray-600 " href="">Webmaster</a></li>
+						</ul>
+						
+					</div>
+					<div class="line-members">
+						<div class="solid"></div>
+					</div>
+
+					<div>
+						<div class="dropdown">
+							<button onclick="myFunction()" class="dropbtn">Dropdown  <i class="fa fa-caret-down"></i></button>
+							<div id="myDropdown" class="dropdown-content">
+							  <a href="#">Gen 16</a>
+							  <a href="#">Gen 15</a>
+							  <a href="#">Gen 14</a>
+							</div>
+						  </div>
+						  <div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide">
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+								<div class="member-ellipse"></div>
+							  </div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						  </div>
+					  
+
+					</div>
+
+				</div>
+			</div>
+		</section>
 		<script src="assets/js/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+		  var swiper = new Swiper(".mySwiper", {
+			navigation: {
+			  nextEl: ".swiper-button-next",
+			  prevEl: ".swiper-button-prev",
+			},
+		  });
+		</script>
 	</body>
 </html>
