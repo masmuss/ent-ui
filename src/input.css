@@ -8,6 +8,11 @@
 /* .nav-link {
 	@apply text-sm font-semibold text-gray-600 transition-all hover:text-gray-800;
 } */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 .nav-link {
 	@apply mt-2 rounded-lg bg-transparent px-4 py-2 text-sm font-semibold hover:text-gray-900 dark:bg-transparent md:mt-0 md:ml-4;
@@ -47,7 +52,7 @@
 }
 
 .section-subtitle {
-	@apply w-[557px] max-w-sm text-lg text-gray-500 md:max-w-2xl md:text-xl md:leading-snug;
+	@apply max-w-sm text-lg text-gray-500 md:max-w-2xl md:text-xl md:leading-snug;
 }
 
 /* about us */
@@ -57,6 +62,10 @@
 
 .about-content-wrapper .about-content {
 	@apply absolute top-[1361px] left-[873px] w-96 font-normal leading-7 tracking-wide text-gray-500;
+}
+
+.ellipse-wrapper {
+	@apply static mt-[1000px] p-3;
 }
 
 .ellipse-wrapper .ellipse {
@@ -139,64 +148,64 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
+	@apply block px-4 py-3 text-gray-900 hover:bg-gray-300;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-	background-color: #ddd;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
-	display: block;
+	@apply block;
 }
 
+/* swiper class */
 .swiper {
-	width: 700px;
-	height: 350px;
+	@apply h-96 w-[800px];
 }
 
 .swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	/* Center slide text vertically */
-	display: grid;
-	grid-template-columns: auto auto auto;
-	padding: 10px 20px;
-	justify-content: center;
-	align-items: center;
-	column-gap: 20px;
+	@apply grid grid-cols-[auto_auto_auto] items-center justify-center gap-6 bg-white px-5 py-3 text-center text-lg;
 }
 
 .swiper-slide img {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	@apply flex h-full w-full object-cover;
 }
 
 .member-ellipse {
-	border-radius: 100%;
-	background: #ddd;
-	height: 150px;
-	width: 150px;
-	padding: 20px;
+	@apply aspect-square h-40 rounded-full bg-gray-300 p-5;
 }
 
-.ellipse-wrapper {
-	position: static;
-	padding: 10px;
-	margin-top: 1000px;
+/* faq */
+.faq-wrapper {
+	@apply flex items-start justify-center gap-x-20 py-36 md:flex-row;
 }
 
-.ellipse-wrapper .ellipse {
-	position: absolute;
-	border-radius: 9999px;
-	--tw-bg-opacity: 1;
-	background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+.faq-wrapper .faq-description {
+	@apply max-w-md md:w-1/3;
+}
+
+.faq-wrapper .faq-questions-wrapper {
+	@apply md:w-2/3 md:px-5;
+}
+
+.faq-questions-wrapper .faq-questions {
+	@apply w-full rounded p-2;
+}
+
+.faq-wrapper .faq-questions-wrapper .faq-questions .faq-question {
+	@apply transition hover:bg-gray-50;
+}
+
+.faq-questions .faq-question .accordion-header {
+	@apply flex h-16 cursor-pointer items-center space-x-5 px-5 transition;
+}
+
+.faq-questions .faq-question .faq-question-icon {
+	@apply mr-1 w-6 text-gray-50;
+}
+
+.faq-questions .faq-question .faq-question-answer {
+	@apply max-h-0 overflow-hidden rounded-b-md border-x-2 border-b-2 text-gray-600 transition-all ease-out;
+}
+
+.accordion-content {
+	@apply max-h-0 overflow-hidden px-5 pt-0;
+	transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
