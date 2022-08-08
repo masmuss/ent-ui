@@ -674,14 +674,6 @@ video {
   width: 75%;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
 .flex-grow {
   flex-grow: 1;
 }
@@ -783,6 +775,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -822,6 +819,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -829,16 +831,6 @@ video {
 }
 
 /* navbar */
-
-/* .nav-link {
-	@apply text-sm font-semibold text-gray-600 transition-all hover:text-gray-800;
-} */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .nav-link {
   margin-top: 0.5rem;
@@ -856,12 +848,6 @@ video {
 .nav-link:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav-link {
-    background-color: transparent;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1290,6 +1276,7 @@ video {
 
 .faq-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   -moz-column-gap: 5rem;
@@ -1305,14 +1292,23 @@ video {
 }
 
 .faq-wrapper .faq-description {
-  max-width: 28rem;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .faq-wrapper .faq-description {
     width: 33.333333%;
+    max-width: 28rem;
   }
+}
 
+.faq-wrapper .faq-questions-wrapper {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 768px) {
   .faq-wrapper .faq-questions-wrapper {
     width: 66.666667%;
     padding-left: 1.25rem;
@@ -1394,6 +1390,115 @@ video {
   transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
 
+/* footer */
+
+.footer-wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.footer-divider {
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+  }
+}
+
+.footer-logo .footer-image-logo {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.footer-logo .footer-image-logo:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .footer-logo .footer-image-logo {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+.footer-nav-link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.footer-nav-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .footer-nav-link {
+    margin-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+  }
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer-social {
+    justify-content: flex-end;
+  }
+}
+
+.footer-social .social-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social .social-links .footer-social-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1434,8 +1539,17 @@ video {
     padding-right: 1.5rem;
   }
 
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
 
