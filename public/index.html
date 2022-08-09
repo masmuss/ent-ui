@@ -17,22 +17,28 @@
 	</head>
 	<body>
 		<!-- navbar + jumbotron -->
-		<section>
-			<nav
-				class="fixed top-0 z-10 w-full bg-white py-5 text-gray-600 transition-all md:py-7"
-			>
-				<div
-					class="container mx-auto flex flex-col px-4 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8"
-				>
+		<section class="header-wrapper">
+			<nav class="navbar-wrapper">
+				<div class="navbar-content">
 					<!-- brand logo -->
 					<div class="flex flex-row items-center justify-between">
-						<a
-							href="#"
-							class="rounded-lg text-lg font-semibold uppercase tracking-widest text-gray-900 focus:outline-none lg:text-xl"
-							>logo</a
-						>
+						<a href="#" class="navbar-brand-wrapper">
+							<img
+								src="assets/img/ENT (Terang).svg"
+								alt="logo ENT terang"
+								class="navbar-brand-logo"
+							/>
+							<img
+								src="assets/img/Logo ENT (Terang).svg"
+								alt="logo ENT terang"
+								class="navbar-brand-logo-mobile"
+							/>
+							<span class="navbar-text-logo"
+								>EEPIS News And Network Team</span
+							>
+						</a>
 						<button
-							class="focus:shadow-outline rounded-lg focus:outline-none md:hidden"
+							class="nav-button"
 							type="button"
 							onclick="changeNavbarState()"
 							id="nav-toggle"
@@ -40,7 +46,7 @@
 							<svg
 								fill="currentColor"
 								viewBox="0 0 20 20"
-								class="h-6 w-6"
+								class="h-6 w-6 text-white"
 							>
 								<path
 									class="hidden"
@@ -100,7 +106,10 @@
 						<div
 							class="mb-8 w-32 border-b-[5px] border-gray-900 pb-3"
 						></div>
-						<h2 class="section-title">About Us</h2>
+						<h2 class="section-title">
+							<span class="text-dark-blue">About </span
+							><span class="text-dark-brown">Us</span>
+						</h2>
 					</div>
 					<div class="about-content-wrapper">
 						<p class="about-content">
@@ -109,12 +118,30 @@
 							Elektronika Negeri Surabaya (PENS)
 						</p>
 						<div class="ellipse-wrapper" style="z-index: -1">
-							<div class="ellipse ellipse-1"></div>
-							<div class="ellipse ellipse-2"></div>
-							<div class="ellipse ellipse-3"></div>
-							<div class="ellipse ellipse-4"></div>
-							<div class="ellipse ellipse-5"></div>
-							<div class="ellipse ellipse-6"></div>
+							<img
+								src="https://picsum.photos/300?random=1"
+								class="ellipse ellipse-1"
+							/>
+							<img
+								src="https://picsum.photos/300?random=2"
+								class="ellipse ellipse-2"
+							/>
+							<img
+								src="https://picsum.photos/300?random=3"
+								class="ellipse ellipse-3"
+							/>
+							<img
+								src="https://picsum.photos/300?random=4"
+								class="ellipse ellipse-4"
+							/>
+							<img
+								src="https://picsum.photos/300?random=5"
+								class="ellipse ellipse-5"
+							/>
+							<img
+								src="https://picsum.photos/300?random=6"
+								class="ellipse ellipse-6"
+							/>
 						</div>
 					</div>
 				</div>
@@ -123,7 +150,10 @@
 			<!-- our product -->
 			<section class="static py-36">
 				<div class="flex flex-col items-center justify-center">
-					<h2 class="section-title">Our Team & Product</h2>
+					<h2 class="section-title text-dark-blue">
+						<span class="text-dark-brown">Our </span>Team &
+						<span class="text-dark-brown">Product</span>
+					</h2>
 					<h3 class="section-subtitle text-center">
 						ENT terdiri dari beberapa divisi kreatif yang selalu berusaha
 						untuk menghasilkan karya
@@ -132,9 +162,13 @@
 				</div>
 				<div class="team-wrapper">
 					<div class="team">
-						<div class="team-image"></div>
+						<img
+							src="https://picsum.photos/400/300?random=1"
+							alt="dummy photo"
+							class="team-image"
+						/>
 						<div class="team-text">
-							<h3 class="team-name">Lorem Ipsum</h3>
+							<h3 class="team-name">reporter</h3>
 							<p class="team-description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 								Facilisi morbi sit consectetur elit.
@@ -145,9 +179,13 @@
 						</button>
 					</div>
 					<div class="team">
-						<div class="team-image"></div>
+						<img
+							src="https://picsum.photos/400/300?random=2"
+							alt="dummy photo"
+							class="team-image"
+						/>
 						<div class="team-text">
-							<h3 class="team-name">Lorem Ipsum</h3>
+							<h3 class="team-name">videografer</h3>
 							<p class="team-description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 								Facilisi morbi sit consectetur elit.
@@ -158,9 +196,13 @@
 						</button>
 					</div>
 					<div class="team">
-						<div class="team-image"></div>
+						<img
+							src="https://picsum.photos/400/300?random=3"
+							alt="dummy photo"
+							class="team-image"
+						/>
 						<div class="team-text">
-							<h3 class="team-name">Lorem Ipsum</h3>
+							<h3 class="team-name">desain grafis</h3>
 							<p class="team-description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 								Facilisi morbi sit consectetur elit.
@@ -171,9 +213,13 @@
 						</button>
 					</div>
 					<div class="team">
-						<div class="team-image"></div>
+						<img
+							src="https://picsum.photos/400/300?random=4"
+							alt="dummy photo"
+							class="team-image"
+						/>
 						<div class="team-text">
-							<h3 class="team-name">Lorem Ipsum</h3>
+							<h3 class="team-name">fotografer</h3>
 							<p class="team-description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 								Facilisi morbi sit consectetur elit.
@@ -184,9 +230,13 @@
 						</button>
 					</div>
 					<div class="team">
-						<div class="team-image"></div>
+						<img
+							src="https://picsum.photos/400/300?random=5"
+							alt="dummy photo"
+							class="team-image"
+						/>
 						<div class="team-text">
-							<h3 class="team-name">Lorem Ipsum</h3>
+							<h3 class="team-name">Webmaster</h3>
 							<p class="team-description">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 								Facilisi morbi sit consectetur elit.
@@ -203,8 +253,10 @@
 			<section class="static py-36">
 				<div class="container">
 					<div class="flex flex-col items-center justify-center">
-						<h2 class="section-title text-center">
-							Here Our Great Team Members For Many Years
+						<h2 class="section-title text-center text-dark-blue">
+							Here Our
+							<span class="text-dark-brown">Great Team Members</span> For
+							Many Years
 						</h2>
 
 						<div class="teams-dropdown-wrapper">
@@ -213,7 +265,7 @@
 								id="dropbtn"
 								class="cta-button-primary"
 							>
-								Dropdown <i class="fa fa-caret-down"></i>
+								Gen 16 <i class="fa fa-caret-down"></i>
 							</button>
 							<div id="myDropdown" class="dropdown-content">
 								<a href="#">Gen 16</a>
@@ -282,8 +334,10 @@
 
 			<section class="faq-wrapper static">
 				<div class="faq-description">
-					<h1 class="section-title text-center md:text-left">
-						Frequently Ask
+					<h1
+						class="section-title text-center text-dark-blue md:text-left"
+					>
+						<span class="text-dark-brown">Frequently </span>Ask
 					</h1>
 					<h2
 						class="section-subtitle px-4 text-center md:px-0 md:text-left"
@@ -298,8 +352,10 @@
 						<div class="faq-question">
 							<!-- header -->
 							<div class="accordion-header">
-								<i class="fas fa-plus"></i>
-								<h3 class="font-semibold">What is term?</h3>
+								<i class="fas fa-plus text-dark-brown"></i>
+								<h3 class="font-semibold text-dark-blue">
+									What is term?
+								</h3>
 							</div>
 							<!-- Content -->
 							<div class="accordion-content">
@@ -321,8 +377,8 @@
 						<div class="faq-question">
 							<!-- header -->
 							<div class="accordion-header">
-								<i class="fas fa-plus"></i>
-								<h3 class="font-semibold">
+								<i class="fas fa-plus text-dark-brown"></i>
+								<h3 class="font-semibold text-dark-blue">
 									When to use Accordion Components?
 								</h3>
 							</div>
@@ -341,8 +397,10 @@
 						<div class="faq-question">
 							<!-- header -->
 							<div class="accordion-header">
-								<i class="fas fa-plus"></i>
-								<h3 class="font-semibold">How can it be defined?</h3>
+								<i class="fas fa-plus text-dark-brown"></i>
+								<h3 class="font-semibold text-dark-blue">
+									How can it be defined?
+								</h3>
 							</div>
 							<!-- Content -->
 							<div class="accordion-content">
@@ -364,8 +422,8 @@
 						<div class="faq-question">
 							<!-- header -->
 							<div class="accordion-header">
-								<i class="fas fa-plus"></i>
-								<h3 class="font-semibold">
+								<i class="fas fa-plus text-dark-brown"></i>
+								<h3 class="font-semibold text-dark-blue">
 									Chamber reached do he nothing be?
 								</h3>
 							</div>
@@ -393,11 +451,16 @@
 			<div class="footer-divider"></div>
 			<div class="footer-content">
 				<div class="footer-logo">
-					<a
-						href="#"
+					<img
+						src="assets/img/ENT (Gelap).svg"
+						alt="ENT logo dark"
 						class="footer-image-logo"
-						>logo</a
-					>
+					/>
+					<img
+						src="assets/img/Logo ENT (Gelap).svg"
+						alt="ENT logo dark"
+						class="footer-image-logo-mobile"
+					/>
 				</div>
 				<div class="footer-navigation">
 					<nav class="flex flex-row">
@@ -409,14 +472,12 @@
 					</nav>
 				</div>
 				<div class="footer-social">
-					<ul class="social-links">
-						<li>
-							<i class="fab fa-youtube fa-lg"></i>
-						</li>
-						<li>
-							<i class="fab fa-instagram fa-lg"></i>
-						</li>
-					</ul>
+					<a href="" class="social-link">
+						<i class="fab fa-youtube fa-lg"></i>
+					</a>
+					<a href="" class="social-link">
+						<i class="fab fa-instagram fa-lg"></i>
+					</a>
 				</div>
 			</div>
 			<div class="footer-trademark">
