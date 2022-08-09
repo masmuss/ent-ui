@@ -188,7 +188,7 @@ body {
 
 /* swiper class */
 .swiper {
-	@apply h-96 w-[800px];
+	@apply h-auto w-[800px];
 }
 
 .swiper-slide {
@@ -200,7 +200,7 @@ body {
 }
 
 .member-ellipse {
-	@apply aspect-square h-40 rounded-full bg-gray-300 p-5;
+	@apply h-10 w-10 rounded-full shadow-md;
 }
 
 /* faq */
