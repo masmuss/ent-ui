@@ -133,11 +133,11 @@ body {
 }
 
 .team .team-image {
-	@apply aspect-4/3 w-full rounded-lg shadow-md;
+	@apply aspect-4/3 w-60 rounded-lg shadow-md md:w-full;
 }
 
 .team .team-text {
-	@apply mt-8 flex flex-col gap-4 text-center font-normal tracking-wide;
+	@apply mt-8 flex w-64 flex-col gap-4 text-center font-normal tracking-wide md:w-full;
 }
 
 .team-text .team-name {
@@ -205,7 +205,7 @@ body {
 
 /* faq */
 .faq-wrapper {
-	@apply flex w-full flex-col items-start justify-center gap-x-20 py-36 md:flex-row;
+	@apply flex w-full flex-col items-start justify-center gap-x-20 px-10 py-36 md:flex-row md:px-0;
 }
 
 .faq-wrapper .faq-description {
@@ -217,27 +217,23 @@ body {
 }
 
 .faq-questions-wrapper .faq-questions {
-	@apply w-full rounded p-2;
+	@apply w-full rounded p-0 md:p-2;
 }
 
 .faq-wrapper .faq-questions-wrapper .faq-questions .faq-question {
-	@apply transition hover:bg-gray-50;
+	@apply transition;
 }
 
 .faq-questions .faq-question .accordion-header {
-	@apply flex h-16 cursor-pointer items-center space-x-5 px-5 transition;
+	@apply flex h-16 cursor-pointer items-center space-x-5 transition md:px-5;
 }
 
 .faq-questions .faq-question .faq-question-icon {
 	@apply mr-1 w-6 text-gray-50;
 }
 
-.faq-questions .faq-question .faq-question-answer {
-	@apply max-h-0 overflow-hidden rounded-b-md border-x-2 border-b-2 text-gray-600 transition-all ease-out;
-}
-
 .accordion-content {
-	@apply max-h-0 overflow-hidden px-5 pt-0;
+	@apply max-h-0 overflow-hidden px-1 pt-0 md:px-5;
 	transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
 
@@ -247,11 +243,15 @@ body {
 }
 
 .footer-divider {
-	@apply border-b-2 border-gray-200;
+	@apply border-b-4 border-gray-200;
 }
 
 .footer-content {
-	@apply flex flex-col items-center justify-between gap-10 py-9 md:flex-row;
+	@apply flex flex-row items-start justify-between gap-10 py-9 md:flex-row;
+}
+
+.footer-logo {
+	@apply flex flex-col items-start justify-start;
 }
 
 .footer-logo .footer-image-logo {
@@ -262,12 +262,16 @@ body {
 	@apply block w-28 md:hidden;
 }
 
+.footer-nav-wrapper {
+	@apply flex flex-col items-start gap-3 md:flex-row md:items-center md:gap-0;
+}
+
 .footer-nav-link {
-	@apply px-2 text-xs text-gray-600 transition-all hover:text-gray-900 md:ml-4 md:py-2 md:text-sm md:font-semibold;
+	@apply px-2 text-sm text-gray-600 transition-all hover:text-gray-900 md:ml-4 md:py-2 md:text-sm md:font-semibold;
 }
 
 .footer-social {
-	@apply flex items-center gap-5 md:justify-end;
+	@apply flex flex-col items-start justify-center gap-5 md:flex-row md:items-center md:justify-end;
 }
 
 .footer-social .social-link {
