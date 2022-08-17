@@ -100,7 +100,7 @@ body {
 }
 
 .ellipse-wrapper .ellipse {
-	@apply absolute rounded-full bg-gray-400 shadow-lg;
+	@apply absolute;
 }
 
 .ellipse-1 {

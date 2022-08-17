@@ -84,3 +84,5 @@ window.addEventListener("scroll", () => {
 			nav.querySelector("a").classList.add("active");
 	});
 });
+// Modal //
+	
