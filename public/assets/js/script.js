@@ -62,3 +62,25 @@ accordionHeader.forEach((header) => {
 		}
 	});
 });
+
+const sections = document.querySelectorAll("section");
+const nav = document.querySelector("#navbar");
+
+window.addEventListener("scroll", () => {
+	let currentPos = window.scrollY;
+	sections.forEach((section) => {
+		let top = section.offsetTop;
+		let bottom = top + section.offsetHeight;
+
+		if (currentPos >= top && currentPos <= bottom) {
+			if (currentPos <= bottom)
+				nav.querySelectorAll("a").forEach((a) => {
+					a.classList.remove("active");
+				});
+			nav.querySelector(`a[href="#${section.id}"]`).classList.add("active");
+		}
+
+		if (currentPos < 300)
+			nav.querySelector("a").classList.add("active");
+	});
+});

@@ -42,7 +42,11 @@ body {
 }
 
 .nav-link {
-	@apply mt-2 rounded-lg bg-transparent px-4 py-2 text-sm font-semibold tracking-wide text-gray-300 hover:text-white md:mt-0 md:ml-4;
+	@apply mt-2 rounded-lg bg-transparent px-4 py-2 text-sm font-semibold tracking-wide text-gray-300 opacity-50 hover:text-white md:mt-0 md:ml-4;
+}
+
+.active {
+	@apply text-gray-100 opacity-100;
 }
 
 /* jumbotron */
