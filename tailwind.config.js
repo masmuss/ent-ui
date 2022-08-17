@@ -8,11 +8,13 @@ module.exports = {
 				"light-blue": "#25B3B4",
 				"dark-brown": "#A87D33",
 				"light-brown": "#FFFFC9",
+				"dark-tosca": "#25B3B4",
 				"dark-gray": "#252C3B",
 				"dark-neutral": "#111827",
 			},
 			backgroundImage: {
 				"hero-pattern": "url('/assets/img/Vector.svg')",
+				"comingsoon" : "url('/assets/img/bg.jpg')",
 			},
 			aspectRatio: {
 				"4/3": "4 / 3",

@@ -285,3 +285,7 @@ body {
 .footer-social .social-link .footer-social-icon {
 	@apply h-10 w-10;
 }
+
+.comingsoon {
+	@apply bg-comingsoon bg-cover bg-center bg-no-repeat;
+}
