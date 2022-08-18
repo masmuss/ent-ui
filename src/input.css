@@ -88,15 +88,15 @@ body {
 
 /* about us */
 .about-content-wrapper {
-	@apply static flex flex-col md:flex-row-reverse;
+	@apply flex flex-col md:flex-row-reverse mx-auto;
 }
 
 .about-content-wrapper .about-content {
-	@apply absolute top-[1361px] left-[873px] w-96 font-normal leading-7 tracking-wide;
+	@apply absolute md:top-[1361px] md:left-[873px] w-96 font-normal leading-7 tracking-wide;
 }
 
 .ellipse-wrapper {
-	@apply static mt-[1000px] p-3;
+	@apply static mt-[1000px] p-3 md:mt-[1000px];
 }
 
 .ellipse-wrapper .ellipse {
@@ -104,27 +104,27 @@ body {
 }
 
 .ellipse-1 {
-	@apply top-[1064px] left-[787px] h-[150px] w-[150px];
+	@apply top-[1064px] left-[787px] h-[50px] aspect-square md:h-[150px] md:w-[150px];
 }
 
 .ellipse-2 {
-	@apply top-[1139px] left-[130px] h-[150px] w-[150px];
+	@apply top-[1139px] left-[130px] h-[50px] aspect-square md:h-[150px] md:w-[150px];
 }
 
 .ellipse-3 {
-	@apply top-[1288px] left-[288px] h-[500px] w-[500px];
+	@apply top-[1288px] left-[288px] h-[100px] aspect-square md:h-[500px] md:w-[500px];
 }
 
 .ellipse-4 {
-	@apply top-[1765px] left-[115px] h-[150px] w-[150px];
+	@apply top-[1765px] left-[115px] h-[50px] aspect-square md:h-[150px] md:w-[150px];
 }
 
 .ellipse-5 {
-	@apply top-[1892px] left-[562px] h-[150px] w-[150px];
+	@apply top-[1892px] left-[562px] h-[50px] aspect-square md:h-[150px] md:w-[150px];
 }
 
 .ellipse-6 {
-	@apply top-[1638px] left-[873px] h-[150px] w-[150px];
+	@apply top-[1638px] left-[873px] aspect-square md:h-[150px] md:w-[150px];
 }
 
 /* our product */
