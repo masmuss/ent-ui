@@ -18,25 +18,63 @@ const changeNavbarState = () => {
 	isNavbarOpen = !isNavbarOpen;
 };
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function showDropMenu() {
-	document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-	if (!event.target.matches("#dropbtn")) {
-		var dropdowns = document.getElementsByClassName("dropdown-content");
-		var i;
-		for (i = 0; i < dropdowns.length; i++) {
-			var openDropdown = dropdowns[i];
-			if (openDropdown.classList.contains("show")) {
-				openDropdown.classList.remove("show");
-			}
-		}
+const navWrapper = document.getElementById("nav-wrapper");
+window.onscroll = function () {
+	// check if the user is scrolling down or up and change the navbar height
+	if (window.pageYOffset > navbar.offsetHeight) {
+		navWrapper.classList.add("scrolled");
+		navWrapper
+			.querySelector(".navbar-brand-logo")
+			.classList.add("logo-scrolled");
+	} else {
+		navWrapper.classList.remove("scrolled");
+		navWrapper
+			.querySelector(".navbar-brand-logo")
+			.classList.remove("logo-scrolled");
 	}
 };
+
+// divisions description
+const divisionDescription = document.getElementById("division-description");
+const teams = document.getElementsByClassName("team");
+
+// loop each team and add click event listener to each team
+for (let i = 0; i < teams.length; i++) {
+	// if nothing is selected, select the first team
+	if (teams[i].classList.contains("team-active"))
+		divisionDescription.innerHTML =
+			teams[i].getElementsByClassName("team-description")[0].innerHTML;
+
+	teams[i].addEventListener("click", () => {
+		// get the chilt item of the clicked team
+		const child = teams[i].children[1];
+		// get the description of the clicked team
+		const description =
+			child.getElementsByClassName("team-description")[0].innerHTML;
+		// add "team-active" class to the clicked team and remove from the other teams
+		for (let j = 0; j < teams.length; j++)
+			teams[j].classList.remove("team-active");
+		teams[i].classList.add("team-active");
+
+		// if the division description is not the same as the clicked team description
+		if (divisionDescription.innerHTML !== description)
+			// change the division description to the clicked team description
+			divisionDescription.innerHTML = description;
+	});
+}
+
+const divisionBtns = document.getElementsByClassName("division-btn");
+// const divisionPhotos = document.getElementById("division-photo");
+
+// loop each division button and add click event listener to each button
+for (let i = 0; i < divisionBtns.length; i++) {
+	// set "division-btn-active" class to the button that is clicked
+	divisionBtns[i].addEventListener("click", () => {
+		for (let j = 0; j < divisionBtns.length; j++)
+			divisionBtns[j].classList.remove("division-btn-active");
+		divisionBtns[i].classList.add("division-btn-active");
+	});
+}
 
 // accordion
 const accordionHeader = document.querySelectorAll(".accordion-header");
@@ -80,9 +118,7 @@ window.addEventListener("scroll", () => {
 			nav.querySelector(`a[href="#${section.id}"]`).classList.add("active");
 		}
 
-		if (currentPos < 300)
-			nav.querySelector("a").classList.add("active");
+		if (currentPos < 300) nav.querySelector("a").classList.add("active");
 	});
 });
 // Modal //
-	

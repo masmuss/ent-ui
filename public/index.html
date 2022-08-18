@@ -6,10 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-		/>
-		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 			rel="stylesheet"
 		/>
@@ -18,7 +14,7 @@
 	<body>
 		<!-- navbar + jumbotron -->
 		<section class="header-wrapper" id="home">
-			<nav class="navbar-wrapper">
+			<nav class="navbar-wrapper" id="nav-wrapper">
 				<div class="navbar-content">
 					<!-- brand logo -->
 					<div class="flex flex-row items-center justify-between">
@@ -102,46 +98,17 @@
 			<!-- about us -->
 			<section class="py-36" id="about-us">
 				<div class="container">
-					<div class="static">
-						<div
-							class="mb-8 w-32 border-b-[5px] border-gray-900 pb-3"
-						></div>
-						<h2 class="section-title">
-							<span class="text-dark-blue">About </span
-							><span class="text-dark-brown">Us</span>
-						</h2>
-					</div>
+					<!-- <div class="mb-8 w-32 border-b-[5px] border-gray-900 pb-3"></div> -->
+					<h2 class="section-title text-center">
+						<span class="text-dark-blue">About </span
+						><span class="text-dark-brown">Us</span>
+					</h2>
 					<div class="about-content-wrapper">
+						<img src="assets/img/about_us.svg" class="about-image" />
 						<div class="about-content">
 							Tim jurnalistik dan jaringan yang dinaungi oleh UPT
 							Jaringan Komputer dan Sistem Informasi Politeknik
 							Elektronika Negeri Surabaya (PENS)
-						</div>
-						<div class="ellipse-wrapper" style="z-index: -1">
-							<img
-								src="assets/img/vg.svg"
-								class="ellipse ellipse-1"
-							/>
-							<img
-								src="assets/img/dg.svg"
-								class="ellipse ellipse-2"
-							/>
-							<img
-								src="assets/img/about_us.svg"
-								class="ellipse ellipse-3"
-							/>
-							<img
-								src="assets/img/fg.svg"
-								class="ellipse ellipse-4"
-							/>
-							<img
-								src="assets/img/wm.svg"
-								class="ellipse ellipse-5"
-							/>
-							<img
-								src="assets/img/rp.svg"
-								class="ellipse ellipse-6"
-							/>
 						</div>
 					</div>
 				</div>
@@ -158,134 +125,88 @@
 						ENT terdiri dari beberapa divisi kreatif yang selalu berusaha
 						untuk menghasilkan karya
 					</h3>
-					<a href="#" class="cta-button-primary mt-11">Media ENT</a>
+					<a
+						href="https://ent.pens.ac.id/mediaent"
+						class="cta-button-primary mt-11"
+						target="_blank"
+						>Media ENT</a
+					>
 				</div>
 				<div class="team-wrapper">
-					<div class="team">
+					<div class="team team-active">
 						<img
-							src="assets/img/icon_rp.svg"
+							src="assets/img/rp.svg"
 							alt="dummy photo"
 							class="team-image"
 						/>
 						<div class="team-text">
 							<h3 class="team-name">reporter</h3>
 							<p class="team-description">
-								Reporter is person who have responsible in making news articles and broadcasting some event reports
+								Reporter is person who have responsible in making news
+								articles and broadcasting some event reports
 							</p>
-						</div>
-						<button class="cta-button-primary product-button" id="button-product">
-							Our Product
-						</button>
-						<div
-							class="fixed hidden inset-0 z-50 transition-all bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
-							id="my-modal">
-							<div
-								class="relative top-20 mx-auto p-5 border w-96 h-96 shadow-lg rounded-md bg-white">
-								<div class="mt-3 text-center">
-							<div
-								class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100"
-							>
-								<svg
-									class="h-6 w-6 text-green-600"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M5 13l4 4L19 7"
-									></path>
-								</svg>
-							</div>
-							<h3 class="text-lg leading-6 font-medium text-gray-900">Successful!</h3>
-							<div class="mt-2 px-7 py-3">
-								<p class="text-sm text-gray-500">
-									Account has been successfully registered!
-								</p>
-							</div>
-							<div class="items-center px-4 py-3">
-								<button
-									id="ok-btn"
-									class="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
-								>
-									OK
-								</button>
-							</div>
-						</div>
-					</div>
 						</div>
 					</div>
 					<div class="team">
 						<img
-							src="assets/img/icon_vg.svg"
+							src="assets/img/vg.svg"
 							alt="dummy photo"
 							class="team-image"
 						/>
 						<div class="team-text">
 							<h3 class="team-name">videografer</h3>
 							<p class="team-description">
-								Videographer is person who have responsible in making small scale journalism video, 
-								start from take a video, video editing, and audio editing.
+								Videographer is person who have responsible in making
+								small scale journalism video, start from take a video,
+								video editing, and audio editing.
 							</p>
 						</div>
-						<button class="cta-button-primary product-button">
-							Our Product
-						</button>
 					</div>
 					<div class="team">
 						<img
-							src="assets/img/icon_dg.svg"
+							src="assets/img/dg.svg"
 							alt="dummy photo"
 							class="team-image"
 						/>
 						<div class="team-text">
 							<h3 class="team-name">desain grafis</h3>
 							<p class="team-description">
-								Graphic designer is person who have responsible in making visualization an information with computer 
+								Graphic designer is person who have responsible in
+								making visualization an information with computer
 								software.
 							</p>
 						</div>
-						<button class="cta-button-primary product-button">
-							Our Product
-						</button>
 					</div>
 					<div class="team">
 						<img
-							src="assets/img/icon_fg.svg"
+							src="assets/img/fg.svg"
 							alt="dummy photo"
 							class="team-image"
 						/>
 						<div class="team-text">
 							<h3 class="team-name">fotografer</h3>
 							<p class="team-description">
-								Photographer is person who have responsible in take a documentation photo at some event.
+								Photographer is person who have responsible in take a
+								documentation photo at some event.
 							</p>
 						</div>
-						<button class="cta-button-primary product-button">
-							Our Product
-						</button>
 					</div>
 					<div class="team">
 						<img
-							src="assets/img/icon_wm.svg"
+							src="assets/img/wm.svg"
 							alt="dummy photo"
 							class="team-image"
 						/>
 						<div class="team-text">
 							<h3 class="team-name">Webmaster</h3>
 							<p class="team-description">
-								Webmaster is person who have responsible in technical 
+								Webmaster is person who have responsible in technical
 								network of campus and campus website development.
 							</p>
 						</div>
-						<button class="cta-button-primary product-button">
-							Our Product
-						</button>
 					</div>
 				</div>
+				<div id="division-description" class="division-description"></div>
 			</section>
 
 			<!-- Our member -->
@@ -297,131 +218,28 @@
 							<span class="text-dark-brown">Great Team Members</span> For
 							Many Years
 						</h2>
-
-						<div class="teams-dropdown-wrapper">
-							<button
-								onclick="showDropMenu()"
-								id="dropbtn"
-								class="cta-button-primary"
-							>
-								Gen 16 <i class="fa fa-caret-down"></i>
-							</button>
-							<div id="myDropdown" class="dropdown-content">
-								<a href="#">Gen 16</a>
-								<a href="#">Gen 15</a>
-								<a href="#">Gen 14</a>
-							</div>
-						</div>
 					</div>
-
-					<div class="flex flex-row items-center justify-center">
-						<div class="w-1/4">
-							<ul class="list-division">
-								<li class="list-division-page">
-									<a href="">Reporter</a>
-								</li>
-								<li class="list-division-page">
-									<a href="">Photografer</a>
-								</li>
-								<li class="list-division-page">
-									<a href="">Videographer</a>
-								</li>
-								<li class="list-division-page">
-									<a href="">Graphic Desainer</a>
-								</li>
-								<li class="list-division-page">
-									<a href="">Webmaster</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="teams-wrapper w-3/4">
-							<div class="swiper mySwiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-									</div>
-									<div class="swiper-slide">
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-									</div>
-									<div class="swiper-slide">
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-										<img
-											src="https://via.placeholder.com/200x200?text=In+Development"
-											class="member-ellipse"
-										/>
-									</div>
-								</div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-							</div>
-						</div>
+					<div class="division-btn-wrapper">
+						<button
+							class="division-btn division-btn-active"
+							data-target="reporter"
+						>
+							Reporter
+						</button>
+						<button class="division-btn" data-target="videographer">
+							Videographer
+						</button>
+						<button class="division-btn" data-target="designer">
+							Designer
+						</button>
+						<button class="division-btn" data-target="photographer">
+							Photographer
+						</button>
+						<button class="division-btn" data-target="webmaster">
+							Webmaster
+						</button>
 					</div>
+					<div id="division-photos"></div>
 				</div>
 			</section>
 
@@ -449,7 +267,11 @@
 							<!-- Content -->
 							<div class="accordion-content">
 								<p class="pl-9 text-justify font-light leading-6">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsa exercitationem vitae, quod cum aliquam veniam sed possimus voluptate minus deserunt repudiandae dolores natus alias numquam. Tenetur ipsum officiis neque!
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Pariatur, ipsa exercitationem vitae, quod cum
+									aliquam veniam sed possimus voluptate minus deserunt
+									repudiandae dolores natus alias numquam. Tenetur
+									ipsum officiis neque!
 								</p>
 								<button
 									class="font-lg my-5 ml-9 rounded-full bg-indigo-600 px-6 py-2 font-medium text-white"
@@ -471,7 +293,11 @@
 							<!-- Content -->
 							<div class="accordion-content">
 								<p class="pl-9 text-justify font-light leading-6">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsa exercitationem vitae, quod cum aliquam veniam sed possimus voluptate minus deserunt repudiandae dolores natus alias numquam. Tenetur ipsum officiis neque!
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Pariatur, ipsa exercitationem vitae, quod cum
+									aliquam veniam sed possimus voluptate minus deserunt
+									repudiandae dolores natus alias numquam. Tenetur
+									ipsum officiis neque!
 								</p>
 							</div>
 						</div>
@@ -488,7 +314,11 @@
 							<!-- Content -->
 							<div class="accordion-content">
 								<p class="pl-9 text-justify font-light leading-6">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsa exercitationem vitae, quod cum aliquam veniam sed possimus voluptate minus deserunt repudiandae dolores natus alias numquam. Tenetur ipsum officiis neque!
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Pariatur, ipsa exercitationem vitae, quod cum
+									aliquam veniam sed possimus voluptate minus deserunt
+									repudiandae dolores natus alias numquam. Tenetur
+									ipsum officiis neque!
 								</p>
 								<button
 									class="font-lg my-5 ml-9 rounded-full bg-indigo-600 px-6 py-2 font-medium text-white"
@@ -510,7 +340,11 @@
 							<!-- Content -->
 							<div class="accordion-content">
 								<p class="pl-9 text-justify font-light leading-6">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsa exercitationem vitae, quod cum aliquam veniam sed possimus voluptate minus deserunt repudiandae dolores natus alias numquam. Tenetur ipsum officiis neque!
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Pariatur, ipsa exercitationem vitae, quod cum
+									aliquam veniam sed possimus voluptate minus deserunt
+									repudiandae dolores natus alias numquam. Tenetur
+									ipsum officiis neque!
 								</p>
 								<button
 									class="font-lg my-5 ml-9 rounded-full bg-indigo-600 px-6 py-2 font-medium text-white"
@@ -564,35 +398,6 @@
 			</div>
 		</footer>
 
-		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 		<script src="assets/js/script.js"></script>
-
-		<!-- Initialize Swiper -->
-		<script>
-			var swiper = new Swiper(".mySwiper", {
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-			});
-			let modal = document.getElementById("my-modal");
-
-    let btn = document.getElementById("button-product");
-
-    let button = document.getElementById("ok-btn");
-	btn.onclick = function() {
-		modal.style.display = "block";
-		}
-		// We want the modal to close when the OK button is clicked
-		button.onclick = function() {
-		modal.style.display = "none";
-		}
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-			}
-		</script>
 	</body>
 </html>
