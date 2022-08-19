@@ -64,7 +64,8 @@ for (let i = 0; i < teams.length; i++) {
 }
 
 const divisionBtns = document.getElementsByClassName("division-btn");
-// const divisionPhotos = document.getElementById("division-photo");
+const members = document.getElementsByClassName("members-wrapper");
+const divisionMembers = document.getElementById("division-photos");
 
 // loop each division button and add click event listener to each button
 for (let i = 0; i < divisionBtns.length; i++) {
@@ -73,6 +74,30 @@ for (let i = 0; i < divisionBtns.length; i++) {
 		for (let j = 0; j < divisionBtns.length; j++)
 			divisionBtns[j].classList.remove("division-btn-active");
 		divisionBtns[i].classList.add("division-btn-active");
+	});
+}
+
+for (let i = 0; i < members.length; i++) {
+	members[i].classList.add("member-wrapper-hidden");
+}
+
+for (let i = 0; i < divisionBtns.length; i++) {
+	divisionBtns[i].addEventListener("click", () => {
+		for (let j = 0; j < members.length; j++)
+			members[j].classList.add("member-wrapper-hidden");
+		members[i].classList.remove("member-wrapper-hidden");
+	});
+}
+
+const memberCards = document.getElementsByClassName("member-card");
+// check where the mouse is hover
+for (let i = 0; i < memberCards.length; i++) {
+	memberCards[i].children[1].classList.add("hidden");
+	memberCards[i].addEventListener("mouseover", () => {
+		memberCards[i].children[1].classList.remove("hidden");
+	});
+	memberCards[i].addEventListener("mouseout", () => {
+		memberCards[i].children[1].classList.add("hidden");
 	});
 }
 
