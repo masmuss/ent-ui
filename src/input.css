@@ -187,6 +187,17 @@ body {
 	@apply flex flex-wrap items-center justify-center gap-6;
 }
 
+.gen14{
+	@apply flex flex-wrap items-center justify-center gap-6;
+}
+
+.gen15{
+	@apply flex flex-wrap items-center justify-center gap-6;
+}
+
+.gen16{
+	@apply flex flex-wrap items-center justify-center gap-6;
+}
 .member-wrapper-hidden {
 	@apply hidden;
 }
