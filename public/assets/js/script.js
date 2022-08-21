@@ -150,4 +150,3 @@ window.addEventListener("scroll", () => {
 		if (currentPos < 300) nav.querySelector("a").classList.add("active");
 	});
 });
-// Modal //

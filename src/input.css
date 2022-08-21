@@ -119,23 +119,23 @@ body {
 
 /* our product */
 .team-wrapper {
-	@apply flex h-full w-full cursor-pointer snap-x snap-mandatory snap-always justify-center gap-y-10 gap-x-3 overflow-scroll px-4 md:snap-normal md:flex-row md:flex-wrap md:gap-x-8 md:gap-y-36 md:py-[76px] md:px-0;
+	@apply flex h-full w-full cursor-pointer snap-x snap-mandatory snap-always justify-start gap-y-10 gap-x-3 overflow-scroll p-4 px-4 md:snap-none md:flex-row md:flex-wrap md:justify-center md:gap-x-8 md:gap-y-36 md:overflow-hidden md:p-0 md:py-[76px] md:px-0;
 }
 
 .team {
-	@apply h-full snap-center flex-col items-center justify-between rounded-md p-3 opacity-70 transition-all duration-100 ease-in-out hover:scale-110 hover:opacity-100 hover:shadow-xl md:flex md:w-1/6;
+	@apply flex aspect-square w-1/2 snap-center flex-col items-center justify-between rounded-md p-3 opacity-70 transition-all duration-100 ease-in-out hover:scale-110 hover:opacity-100 hover:shadow-xl md:w-1/6;
 }
 
 .team .team-image {
-	@apply aspect-square w-16 md:w-32;
+	@apply aspect-square w-14 md:w-32;
 }
 
 .team .team-text {
-	@apply mt-4 flex flex-col gap-4 text-center font-normal tracking-wide md:w-full;
+	@apply mt-4 flex w-full flex-col gap-4 text-center font-normal tracking-wide;
 }
 
 .team-text .team-name {
-	@apply text-center text-sm font-semibold uppercase leading-normal tracking-wide text-dark-gray md:text-xl;
+	@apply text-center text-xs font-semibold uppercase leading-normal tracking-wide text-dark-gray md:text-xl;
 }
 
 .team-text .team-description {
@@ -143,7 +143,7 @@ body {
 }
 
 .division-description {
-	@apply mx-auto flex max-w-2xl justify-center text-center text-xl font-semibold leading-normal tracking-wide text-dark-gray;
+	@apply mx-auto flex justify-center p-3 text-center font-semibold leading-normal tracking-wide text-dark-gray md:max-w-2xl md:p-0 md:text-xl;
 }
 
 .team-active {
@@ -167,7 +167,7 @@ body {
 }
 
 .division-btn-wrapper {
-	@apply flex w-full justify-center gap-4 overflow-x-scroll py-10;
+	@apply flex w-full justify-start gap-4 overflow-x-scroll p-4 py-10 md:justify-center md:overflow-hidden md:p-7;
 }
 
 .division-btn {
@@ -179,7 +179,7 @@ body {
 }
 
 .members-wrapper {
-	@apply flex flex-wrap items-center justify-center gap-6;
+	@apply flex flex-wrap items-center justify-center gap-6 py-3 md:py-7;
 }
 
 .gen14,
@@ -297,4 +297,13 @@ body {
 
 .comingsoon {
 	@apply bg-comingsoon bg-cover bg-center bg-no-repeat;
+}
+
+/* FAB */
+.fab-btn {
+	@apply fixed bottom-7 right-7 rounded-full bg-dark-brown p-4 transition-all ease-in-out md:p-5;
+}
+
+.fab-icon {
+	@apply h-8 w-8 fill-white;
 }
