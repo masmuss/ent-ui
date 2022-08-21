@@ -119,15 +119,15 @@ body {
 
 /* our product */
 .team-wrapper {
-	@apply flex h-full w-full cursor-pointer flex-wrap justify-center gap-y-10 px-4 py-[76px] md:flex-row md:gap-x-8 md:gap-y-36 md:px-0;
+	@apply flex h-full w-full cursor-pointer snap-x snap-mandatory snap-always justify-center gap-y-10 gap-x-3 overflow-scroll px-4 md:snap-normal md:flex-row md:flex-wrap md:gap-x-8 md:gap-y-36 md:py-[76px] md:px-0;
 }
 
 .team {
-	@apply flex h-full w-1/6 flex-col items-center justify-between rounded-md p-3 opacity-70 transition-all duration-100 ease-in-out hover:scale-110 hover:opacity-100 hover:shadow-xl;
+	@apply h-full snap-center flex-col items-center justify-between rounded-md p-3 opacity-70 transition-all duration-100 ease-in-out hover:scale-110 hover:opacity-100 hover:shadow-xl md:flex md:w-1/6;
 }
 
 .team .team-image {
-	@apply aspect-square w-60 md:w-32;
+	@apply aspect-square w-16 md:w-32;
 }
 
 .team .team-text {
@@ -135,7 +135,7 @@ body {
 }
 
 .team-text .team-name {
-	@apply text-center text-xl font-semibold uppercase leading-normal tracking-wide text-dark-gray;
+	@apply text-center text-sm font-semibold uppercase leading-normal tracking-wide text-dark-gray md:text-xl;
 }
 
 .team-text .team-description {
@@ -162,68 +162,58 @@ body {
 	@apply flex flex-col items-center justify-center;
 }
 
-.teams-dropdown-wrapper {
-	@apply relative inline-block items-center justify-center p-12 py-12;
-}
-
 .list-division .list-division-page {
 	@apply py-3 px-4 text-lg;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .division-btn-wrapper {
-	@apply flex w-full justify-center gap-4 py-10;
+	@apply flex w-full justify-center gap-4 overflow-x-scroll py-10;
 }
 
 .division-btn {
-	@apply rounded-full bg-dark-neutral px-4 py-1 text-sm font-semibold tracking-wide text-white opacity-70 transition-all hover:opacity-100;
+	@apply rounded-full border border-dark-neutral px-4 py-1 text-sm font-semibold tracking-wide text-dark-neutral opacity-70 transition-all hover:opacity-100;
 }
 
 .division-btn-active {
-	@apply opacity-100;
+	@apply border-none bg-dark-neutral text-white opacity-100;
 }
 
 .members-wrapper {
 	@apply flex flex-wrap items-center justify-center gap-6;
 }
 
-.gen14{
+.gen14,
+.gen15,
+.gen16 {
 	@apply flex flex-wrap items-center justify-center gap-6;
 }
 
-.gen15{
-	@apply flex flex-wrap items-center justify-center gap-6;
-}
-
-.gen16{
-	@apply flex flex-wrap items-center justify-center gap-6;
-}
 .member-wrapper-hidden {
 	@apply hidden;
 }
 
 .member-identifier {
-	@apply w-52 text-center text-5xl font-semibold;
+	@apply w-32 text-center text-5xl font-semibold md:w-52;
 }
 
 .member-card {
-	@apply relative w-52 shadow-md grayscale transition-all ease-in hover:scale-110 hover:grayscale-0;
+	@apply relative w-32 rounded-md shadow-md grayscale transition-all ease-in hover:scale-110 hover:shadow-lg hover:grayscale-0 md:w-52;
 }
 
 .member-image {
-	@apply rounded-md;
+	@apply aspect-square rounded-md object-cover object-top;
 }
 
 .member-detail {
-	@apply absolute bottom-0 w-full rounded-b-md bg-opacity-90 bg-gradient-to-t from-dark-brown p-3 pt-6 text-white;
+	@apply absolute bottom-0 w-full rounded-b-md bg-opacity-90 bg-gradient-to-t from-dark-blue p-1 text-white md:p-3 md:pt-6;
 }
 
 .member-detail .member-name {
-	@apply text-center text-lg font-semibold;
+	@apply text-center text-sm font-semibold md:text-base;
 }
 
 .member-detail .member-major {
-	@apply text-center tracking-wide;
+	@apply text-center text-xs tracking-wide md:text-sm;
 }
 
 /* faq */

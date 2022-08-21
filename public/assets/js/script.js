@@ -82,6 +82,10 @@ for (let i = 0; i < members.length; i++) {
 }
 
 for (let i = 0; i < divisionBtns.length; i++) {
+	// if nothing is selected, select the first division
+	if (divisionBtns[i].classList.contains("division-btn-active"))
+		members[i].classList.remove("member-wrapper-hidden");
+
 	divisionBtns[i].addEventListener("click", () => {
 		for (let j = 0; j < members.length; j++)
 			members[j].classList.add("member-wrapper-hidden");
